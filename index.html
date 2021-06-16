@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>St. Mark's School, Meera Bagh</title>
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&family=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            .links {
+                float: left;
+                color: darkgrey;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                font-size: 18px;
+                display: inline;
+            }
+            .nav navbar-nav {
+                list-style: none;
+                font-family: sans-serif;
+                position: fixed;
+                right: 30px;
+                z-index: 10;
+                cursor: pointer;
+                width: 100%;
+                margin-left: 50%;
+                display: inline;
+            }
+            .links:hover {
+                text-decoration: underline;
+            }
+            h1 {
+                text-align: center;
+                font-family: 'Reggae One', cursive;
+            } 
+            .parallax-container {
+                background-image: linear-gradient(rgba(0, 255, 255, 0), rgba(0, 255, 255, 1));
+                height: 900px;
+            }
+            #about {
+                height: 750px;   
+            }
+            h2 {
+                font-family: 'Arvo', serif;
+                font-size: 40px;
+            }
+            .videos-section {
+                text-align: center;
+                background-image: linear-gradient(red, orange);
+                height: 850px;
+            }
+            #vid1 {
+                border-radius: 30px;
+                text-align: center;
+            }
+            #vid2 {
+                border-radius: 30px;
+                text-align: center;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            .gallery-section {
+                background-image: linear-gradient(lightgreen, yellowgreen);
+                text-align: center;
+            }
+            #img1 {
+                border-radius: 20px;
+                border: solid 5px gold;
+                padding: 5px;
+                width: 450px;
+                height: 300px;
+                margin-right: 20px;
+            }
+            #img2 {
+                border-radius: 20px;
+                border: solid 5px gold;
+                padding: 5px;
+                width: 450px;
+                height: 300px;
+            }
+            #img3 {
+                border-radius: 20px;
+                border: solid 5px gold;
+                padding: 5px;
+                width: 450px;
+                height: 300px;
+                margin-top: 20px;
+            }
+            #img4 {
+                border-radius: 20px;
+                border: solid 5px gold;
+                padding: 5px;
+                width: 450px;
+                height: 300px;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            #img5 {
+                border-radius: 20px;
+                border: solid 5px gold;
+                padding: 5px;
+                width: 450px;
+                height: 300px;
+                margin-top: 20px;
+            }
+            #img6 {
+                border-radius: 20px;
+                border: solid 5px gold;
+                padding: 5px;
+                width: 450px;
+                height: 300px;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .contact-section {
+                text-align: center;
+                background-image: linear-gradient(pink, purple)
+            }
+            #principal {
+                margin-top: 50px;
+                margin-bottom: 20px;
+                width: 210px;
+                border-radius: 80px;
+                border: solid 3px black;
+                padding: 3px;
+            }
+            h3 {
+                font-family: 'Anton', sans-serif;
+                font-size: 40px;
+            }
+            h4 {
+                font-family: 'Abril Fatface', cursive;
+                font-size: 40px;
+            }
+            #map {
+                border-radius: 20px;    
+            }
+            .email {
+                color: darkturquoise;
+            }
+            .email:hover {
+                color: snow;
+            }
+            .instagram {
+                color: darkturquoise;
+            }
+            .instagram:hover {
+                color: snow;
+            }
+            #para1 {
+                font-family: 'Chela One', cursive;
+                font-size: 25px;
+                color: chartreuse;
+            }
+            #para2 {
+                font-family: 'Pattaya', sans-serif;
+                font-size: 23px;
+                color: greenyellow;
+            }
+            #ach {
+                font-size: 40px;
+                font-family: 'Merriweather Sans', sans-serif;
+                text-align: center;
+            }
+            .achievements-section {
+                background-image: linear-gradient(yellow, yellowgreen);
+                height: auto;
+            }
+            .movie_head {
+                font-size: 20px;
+                padding: 6px 22px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                width: 100%;
+                display: inline-block;
+                text-align: left;
+            }
+            #achimg1, #achimg2, #achimg3 {
+                border: solid 5px gold;
+                border-radius: 20px;
+            }
+            #achpara1, #achpara2 {
+                font-size: 25px;
+                text-align: justify;
+            }
+            #achpara3 {
+                font-size: 19px;
+                text-align: justify;
+            }
+            #achimg3 {
+                height: 200px;
+            }
+            .campus-life-section {
+                text-align: center;
+                background-image: linear-gradient(lightgray, white);
+            }
+            h6 {
+                font-size: 40px;
+                font-family: 'Do Hyeon', sans-serif;
+            }
+            .row::after {
+                clear: both;
+                display: table;
+            }
+            .main-div {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+                border: 1px solid #c7c7c7;
+            }
+            .main-div img {
+                width: 100%;
+                height: 300px;
+            }
+            #clpara {
+                margin-left: 20px;
+            }
+            #wnheading {
+                font-size: 45px;
+                font-family: 'Fredoka One', cursive;
+                text-align: center;
+            }
+            .whats-new-section {
+                background-image: linear-gradient(skyblue, turquoise);
+                height: 800px;
+            }
+            #wnnews1, #wnnews2 {
+                font-size: 18px;
+            }
+            #wnimg1, #wnimg2 {
+                border-radius: 40px;
+            }
+            #wnpara1, #wnpara2 {
+                font-size: 20px;
+                margin-top: 100px;
+                display: block;
+            }
+            .wnlist {
+                margin-bottom: 20px;
+            }
+            .vid-anchor {
+                font-size: 20px;
+                color: aqua;
+            }
+            .vid-anchor:hover {
+                font-weight: bolder;
+                color: lightskyblue;
+            }
+            .modal-content {
+                margin-top: 100px;
+            }
+            #alumni1, #alumni2, #alumni3, #alumni4 {
+                width: 250px;
+                height: 373px;
+                border-radius: 25px;
+                border: solid 5px olive;
+            }
+            #alumniimg1, #alumniimg2, #alumniimg3, #alumniimg4 {
+                width: 250px;
+                height: 373px;
+                border-radius: 25px;
+                border: solid 5px olive;
+                text-align: center;
+            }
+            .alumni-section {
+                text-align: center;
+                background-image: linear-gradient(mediumvioletred, pink)
+            }
+            
+            #alumni-heading {
+                font-size: 40px;
+                font-family: 'Mate SC', serif;
+            }
+            #dhawanpara, #wahipara, #bassipara, #sobtipara {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+            .modal-title {
+                font-variant: small-caps;
+                font-size: 20px;
+            }
+            #aspara {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            var array1 = [
+                "http://saintmarksschool.com/meerabagh/photogallery/images/2021/apr21/dignitaries/7_s.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf1Gt8rEH-rMwdTJFeIhSNHKNEs-3oR48EXA&usqp=CAU",
+                "http://www.saintmarksschool.com/meerabagh/photogallery/images/2021/apr21/dignitaries/6_s.jpg",
+                "http://www.saintmarksschool.com/meerabagh/photogallery/images/2021/apr21/mexico/3_s.jpg"
+            ];
+            var array2 = [
+                "https://scontent.fdel1-1.fna.fbcdn.net/v/t1.6435-9/126054585_1520843138086044_1737548368382224144_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=730e14&_nc_ohc=xMgd7_hG3oYAX9QfRi9&_nc_ht=scontent.fdel1-1.fna&oh=79eccfe5c62bb6ecb0d14fa1d98f4409&oe=60E7BF4A",
+                "https://scontent.fdel1-4.fna.fbcdn.net/v/t1.6435-9/135184495_1552742511562773_3305984930700106109_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=j-zAInHZ5UkAX9F8jSv&_nc_ht=scontent.fdel1-4.fna&oh=219b1b9dc866621f185da3e018770087&oe=60E78D50",
+                "https://scontent.fdel1-4.fna.fbcdn.net/v/t1.6435-9/135546171_1552741794896178_6491436557658393052_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=730e14&_nc_ohc=qcuv9uF8i8oAX8YQrZq&_nc_ht=scontent.fdel1-4.fna&oh=51326d2f37b3fe7a0d803357cfbf6851&oe=60E73D8D",
+                "https://scontent.fdel1-1.fna.fbcdn.net/v/t1.6435-9/135485569_1552742521562772_8437881876673087772_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=730e14&_nc_ohc=tMNYgMim0poAX_oT33G&_nc_ht=scontent.fdel1-1.fna&oh=21f09e8fa36e8bbd8cb9a7d13307194c&oe=60E773FE"
+            ];
+            var x = 0;
+            var y = 0;
+            function flipImage1() {
+                document.getElementById("wnimg1").src=array1[x];
+                x++;
+                if (x == 4) {
+                    x = 0;
+                }
+            }
+            function flipImage2() {
+                document.getElementById("wnimg2").src=array2[y];
+                y++;
+                if (y == 4) {
+                    y = 0;
+                }
+            }
+        </script>
+        <nav class="navbar-inverse my_nav_bar" style="position:sticky;top:0;z-index:99999">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://www.saintmarksschool.in" style="margin-top: 5px">St. Mark's School, Meera Bagh</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="links"><a href="#about_section">ABOUT</a></li>
+                    <li class="links"><a href="#whats_new_section">WHAT'S NEW</a></li>
+                    <li class="links"><a href="#alumni_section">ALUMNI</a></li>
+                    <li class="links"><a href="#achievements_section">ACHIEVEMENTS</a></li>
+                    <li class="links"><a href="#videos_section">VIDEOS</a></li>
+                    <li class="links"><a href="#campus_life_section">CAMPUS LIFE</a></li>
+                    <li class="links"><a href="#gallery_section">GALLERY</a></li>
+                    <li class="links"><a href="#contact_section">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <section class="parallax-container" id="about_section">
+                <hr>
+                <h1><b><u>ABOUT</u></b></h1>
+                <hr>
+                <iframe class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="about" src="http://www.saintmarksschool.com/meerabagh/about_sms.html"></iframe>        
+            </section>
+            <section class="whats-new-section" id="whats_new_section">
+                <p id="wnheading"><b><u>WHAT'S NEW</u></b></p>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 wnlist">
+                        <p id="wnnews1">Online classes for students resuming from 10th June, 2021</p>
+                        <img class="img-responsive col-lg-6 col-md-6 col-sm-6 col-xs-12" id="wnimg1" src="http://saintmarksschool.com/meerabagh/photogallery/images/2021/apr21/dignitaries/7_s.jpg" onmouseover="flipImage1()">
+                        <p class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="wnpara1">Virtual Online Classes for the school students are resuming from 10th June, 2021. The summer vaccations are over. Due to the pandemic situation, offline classes haven't been started.</p>
+                    </li>
+                    <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 wnlist">
+                        <p id="wnnews2">Model United Nations (MUN) for class 6th and 7th students coming up on 19th and 20th June, 2021</p>
+                        <img class="img-responsive col-lg-6 col-md-6 col-sm-6 col-xs-12" id="wnimg2" src="https://scontent.fdel1-1.fna.fbcdn.net/v/t1.6435-9/126054585_1520843138086044_1737548368382224144_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=730e14&_nc_ohc=xMgd7_hG3oYAX9QfRi9&_nc_ht=scontent.fdel1-1.fna&oh=79eccfe5c62bb6ecb0d14fa1d98f4409&oe=60E7BF4A" onmouseover="flipImage2()">
+                        <p class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="wnpara2">Model United Nations (MUN) is a platform for students to represent a country and share its point of view on a particular agenda. They get a chance to speak, perform and get question-answer round where the other delegates ask questions to the one who is speaking.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="alumni-section" id="alumni_section">
+                <p id="alumni-heading"><b><u>Alumni</u></b></p>
+                <div class="dhawan" data-toggle="modal" data-target="#shikhardhawan">
+                    <img class="img-responsive" id="alumni1" src="https://www.bing.com/th?id=AMMS_4a0c28408f4032a28c26ab2519387bc4&w=125&h=183&c=12&rs=1&o=5&pid=3.1&rm=2">
+                    <p id="aspara">Shikhar Dhawan</p>
+                </div>
+                <br>
+                <div class="modal fade" id="shikhardhawan">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <p class="modal-title"><b>Shikhar Dhawan</b></p>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://www.bing.com/th?id=AMMS_4a0c28408f4032a28c26ab2519387bc4&w=125&h=183&c=12&rs=1&o=5&pid=3.1&rm=2" id="alumniimg1">
+                                <p id="dhawanpara">Shikhar Dhawan is an Indian international cricketer. A left-handed opening batsman and an occasional right-arm off break bowler, he plays for Delhi in first-class cricket and Delhi Capitals in the IPL. He played for the Indian Under-17 and Under-19 teams before making his first-class debut for Delhi in November 2004. At the 2015 World Cup, Dhawan was the leading run-scorer for India and in the following year, became the fastest Indian to reach 3,000 ODI runs. In December 2017, he became the 2nd fastest Indian to reach 4000 ODI runs.</p>
+                                <a href="https://en.wikipedia.org/wiki/Shikhar_Dhawan" style="font-size: 16px;">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wahi" data-toggle="modal" data-target="#karanwahi">
+                    <img class="img-responsive" id="alumni2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Karan_Wahi_at_the_Zee_Gold_Awards_2017_%28cropped%29.jpg/220px-Karan_Wahi_at_the_Zee_Gold_Awards_2017_%28cropped%29.jpg">
+                    <p id="aspara">Karan Wahi</p>
+                </div>
+                <br>
+                <div class="modal fade" id="karanwahi">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <p class="modal-title"><b>Karan Wahi</b></p>
+                            </div>
+                            <div class="modal-body">
+                                <img id="alumniimg2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Karan_Wahi_at_the_Zee_Gold_Awards_2017_%28cropped%29.jpg/220px-Karan_Wahi_at_the_Zee_Gold_Awards_2017_%28cropped%29.jpg">
+                                <p id="wahipara">Karan Wahi is an Indian actor, model and television host. Wahi has also played for the Delhi Under-17 cricket team. After he moved to Mumbai, started his television career with the 2004 television show Remix on Star One. He later starred in the popular youth show Dill Mill Gayye which he further rose to fame in. In addition to his acting career, Wahi has participated in stage shows and has hosted several awards and TV shows. He showcased his comedy talent in Colors TV's comedy show Comedy Nights Bachao.</p>
+                                <a href="https://en.wikipedia.org/wiki/Karan_Wahi" style="font-size: 16px">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bassi" data-toggle="modal" data-target="#priyankabassi">
+                    <img class="img-responsive" id="alumni3" src="https://th.bing.com/th/id/Rd4b689e4d04ff96c1624cd926efae287?rik=2K%2bay34Y6SdQ7w&riu=http%3a%2f%2fimg.india-forums.com%2fimages%2f600x0%2f107882-priyanka-bassi.jpg&ehk=li0laVunCz6FDjA5LNl1Q5VcLihRvl25E8AKAdGFYv4%3d&risl=&pid=ImgRaw">
+                    <p id="aspara">Priyanka Bassi</p>
+                </div>
+                <br>
+                <div class="modal fade" id="priyankabassi">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <p class="modal-title"><b>Priyanka Bassi</b></p>
+                            </div>
+                            <div class="modal-body">
+                                <img id="alumniimg3" src="https://th.bing.com/th/id/Rd4b689e4d04ff96c1624cd926efae287?rik=2K%2bay34Y6SdQ7w&riu=http%3a%2f%2fimg.india-forums.com%2fimages%2f600x0%2f107882-priyanka-bassi.jpg&ehk=li0laVunCz6FDjA5LNl1Q5VcLihRvl25E8AKAdGFYv4%3d&risl=&pid=ImgRaw">
+                                <p id="bassipara">Priyanka Bassi is an Indian television actress popularly known for her famous act as Cadet Naina Singh Ahluwalia in the popular soap Left Right Left. She is originally from Delhi and has also attended Barry John's Theatre Group.</p>
+                                <a href="https://en.wikipedia.org/wiki/Priyanka_Bassi" style="font-size: 16px;">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobti" data-toggle="modal" data-target="#barunsobti">
+                    <img class="img-responsive" id="alumni4" src="https://www.iwmbuzz.com/wp-content/uploads/2019/06/barun-sobti-the-angry-young-man-8-735x1024.jpg">
+                    <p id="aspara">Barun Sobti</p>
+                </div>
+                <br>
+                <div class="modal fade" id="barunsobti">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <p class="modal-title"><b>Barun Sobti</b></p>
+                            </div>
+                            <div class="modal-body">
+                                <img id="alumniimg4" src="https://www.iwmbuzz.com/wp-content/uploads/2019/06/barun-sobti-the-angry-young-man-8-735x1024.jpg">
+                                <p id="sobtipara">Barun Sobti is an Indian actor. He started his acting career in 2009 with Star Plus's Shraddha and later appeared in a negative role in Dill Mill Gayye. He portrayed his first lead role in Sony TV's series Baat Hamari Pakki Hai (2010). In 2011, Sobti rose to fame by playing Arnav Singh Raizada in Iss Pyaar Ko Kya Naam Doon?.</p>
+                                <a href="https://en.wikipedia.org/wiki/Barun_Sobti" style="font-size: 16px;">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </section>
+            <section class="achievements-section" id="achievements_section">
+                <p id="ach"><b><u>ACHIEVEMENTS</u></b></p>
+                <div class="bg-primary movie_head" data-toggle="collapse" data-target="#achievement1">
+                    HT Pace Award - (February 2020) <i class="fa fa-sort-desc"></i>
+                </div>
+                <div id="achievement1" class="collapse">
+                    <img id="achimg1" class="col-lg-6 col-md-6 col-sm-6 col-xs-12" src="http://www.saintmarksschool.com/meerabagh/images/beyond_curriculum/activities/international/awards/2020/ht_pace/1_s.jpg">
+                    <p id="achpara1" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">Aashvi Ahlawat and Manya Jain of Class VII-A participated in HT Pace Contest Quiz No. 608 and 609 respectively in the month of February, 2020. The quiz was sponsored by Penguin Books. The results were declared the following week. Manya won the second prize and Aashvi won the consolation prize in their respective quiz. They were handed over the prizes by the Vice Principal, Ms. R. Anand.</p>
+                </div>
+                <div class="bg-primary movie_head" data-toggle="collapse" data-target="#achievement2">
+                    Brainfeed School Excellence Award - (2020) <i class="fa fa-sort-desc"></i>
+                </div>
+                <div id="achievement2" class="collapse">
+                    <img id="achimg2" class="col-lg-6 col-md-6 col-sm-6 col-xs-12" src="http://www.saintmarksschool.com/meerabagh/images/beyond_curriculum/activities/international/awards/2020/brainfeed/1_s.jpg">
+                    <p id="achpara2" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">We receive the prestigious School Excellence Award from Brainfeed Magazine. The award is in recognition to our outstanding education practices and our contribution in creating global leaders. We are applauded for our innovative and creative practices, sports education, co-curricular activities and much more. The award is also for our innovative approach and committed efforts in grooming young learners with skills for life.</p>
+                </div>
+                <div class="bg-primary movie_head" data-toggle="collapse" data-target="#achievement3">
+                    Zamit Award - (2020) <i class="fa fa-sort-desc"></i>
+                </div>
+                <div id="achievement3" class="collapse">
+                    <img id="achimg3" class="col-lg-6 col-md-6 col-sm-6 col-xs-12" src="http://www.saintmarksschool.com/meerabagh/images/beyond_curriculum/activities/international/awards/2020/zamit/1_s.jpg">
+                    <p id="achpara3">Ms. S. Arora, Ms. M. Som, Ms. S. Kaur and Ms. S. Suresh of St. Mark’s Sr. Sec. Public School, Meera Bagh received the 8th Zamit International School Awards at the 11th EDU ConvEx organised by Planet Edu. The conference included many talks about Learning Power by some eminent speakers like Mr. John Kerr (former CEO of Edexcel Foundation), Prof. M. M. Pant (Founder, LMP Education Trust), Mr. Sanjay Malviya (Managing Trustee, The Future Foundation) and Mr. Sanjeev Sehgal (COO – Planet EDU Exams).</p>
+                </div>
+            </section>
+            <section class="videos-section" id="videos_section">
+                <h2><b><u>VIDEOS</u></b></h2>
+                <iframe id="vid1" class="col-lg-6 col-md-6 col-sm-6 col-xs-12" width="560" height="315" src="https://www.youtube.com/embed/hlC5rF99Zjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <iframe id="vid2" class="col-lg-6 col-md-6 col-sm-6 col-xs-12" width="560" height="315" src="https://www.youtube.com/embed/EemEG0b-KWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a class="vid-anchor" href="https://www.youtube.com/channel/UCzQ2w5W2PhaO0KUR8SMaagA">More videos</a>
+            </section>
+            <section class="campus-life-section" id="campus_life_section">
+                <h6><b><u>CAMPUS LIFE</u></b></h6>
+                <div class="row">
+                    <div class="main-div col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="https://th.bing.com/th/id/Rd5e9c84019b01faf1853288cd48c84ce?rik=bIcyEnhSMhFtuA&riu=http%3a%2f%2fwww.saintmarksschool.com%2fgirls_school%2fabout_sms%2finfrastructure%2fimages%2f20_b.jpg&ehk=szeezOJ1D6MbzbVk84ZghjKZKTCy0U8owZWC%2fPmA5hc%3d&risl=&pid=ImgRaw">
+                        <p><kbd>School Library</kbd></p>
+                        <hr>
+                        <p id="clpara" class="text-muted text-left">The school library was built for the students and the teachers to read books of all types to get engaged and have fun.</p>
+                    </div>
+                    <div class="main-div col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="https://th.bing.com/th/id/OIP.VMv7yML1vPpyQjdb5uOWtQHaET?pid=ImgDet&rs=1">
+                        <p><kbd>School Playground</kbd></p>
+                        <hr>
+                        <p id="clpara" class="text-muted text-left">The school playground is for students to play outdoor games like badminton, football, volleyball, cricket and so on.</p>
+                    </div>
+                    <div class="main-div col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="https://th.bing.com/th/id/Rc89401095b2f0f9e24f3d60cc208b10a?rik=TxnsPHS0%2fIPIvw&riu=http%3a%2f%2fwww.saintmarksschool.com%2fgirls_school%2fabout_sms%2finfrastructure%2fscroller%2f17_b.jpg&ehk=SnoN4bYrToIUF6iF88dsoq02q0FX7f4fzL6q9RviaU0%3d&risl=&pid=ImgRaw">
+                        <p><kbd>School Auditorium</kbd></p>
+                        <hr>
+                        <p id="clpara" class="text-muted text-left">The school auditorium was built for annual functions and performances by students. Competitions like singing, character dramatisation, dance, etc. were also held at the auditorium.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery-section" id="gallery_section">
+                <h3><b><u><i>GALLERY</i></u></b></h3>
+                <marquee direction="left" scrollamount="20" onmouseover="this.stop();" onmouseout="this.start();">
+                    <img id="img1" src="https://th.bing.com/th/id/OIP.xE-aK00ZBPNeXrwNB0kcKwHaE8?pid=ImgDet&rs=1">
+                    <img id="img2" src="http://www.saintmarksschool.com/meerabagh/images/beyond_curriculum/activities/international/awards/2018/asia/1_b.jpg">
+                </marquee>
+                <marquee direction="right" scrollamount="20" onmouseover="this.stop();" onmouseout="this.start();">
+                    <img id="img3" src="https://th.bing.com/th/id/Rbea7461cb84263d305f4c5ac310e98e6?rik=gXUmg3MIvWT5YA&riu=http%3a%2f%2fwww.saintmarksschool.com%2fmeerabagh%2fimages%2fbeyond_curriculum%2factivities%2fwednesdays%2f2019%2f23oct19%2f1_b.jpg&ehk=vPKxyRyViw6bgNlmMl74IlPaDys2lHg0EfDHYanVJg0%3d&risl=&pid=ImgRaw">
+                    <img id="img4" src="https://th.bing.com/th/id/Rb0b59bb6fe305e9403fd48920319f9f9?rik=Be%2f7bCtdHDYcpw&riu=http%3a%2f%2fwww.saintmarksschool.com%2fgirls_school%2fimages%2fbeyond_curriculum%2fclubs%2feco%2f2019%2fgandhi%2fb%2f18.jpg&ehk=icGmXczbVcmMINSAn4qi6NZ8t5tyPMbGJssO0hsL%2fpY%3d&risl=&pid=ImgRaw">
+                </marquee>
+                <marquee direction="left" scrollamount="20" onmouseover="this.stop();" onmouseout="this.start();">
+                    <img id="img5" src="https://www.edustoke.com/assets/uploads-new/st-marks-senior-secondary-public-school-1509334838-2.png">
+                    <img id="img6" src="http://www.saintmarksschool.com/meerabagh/photogallery/images/2014/social_service/1_b.jpg">
+                </marquee>
+            </section>
+            <section class="contact-section" id="contact_section">
+                <h4><b><u>CONTACT US</u></b></h4>
+                <br>
+                <iframe id="map" class="col-lg-10 col-md-10 col-sm-10 col-xs-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14003.840926317653!2d77.0872754!3d28.6609094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x50acdccf50fdeb14!2sSt.%20Mark&#39;s%20Senior%20Secondary%20Public%20School%20Meera%20Bagh%20Paschim%20Vihar!5e0!3m2!1sen!2sin!4v1621703824957!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <br>
+                <img id="principal" src="http://www.saintmarksschool.com/meerabagh/images/about_sms/principal.jpg">
+                <p id="para1">Principal name :</p>
+                <p id="para2">Mrs. Anjali Aggarwal</p>
+                <br>
+                <a class="email" href="mailto:stmarksmb@saintmarksschool.com?Subject=hello"><i class="fa fa-envelope"></i>&nbsp;&nbsp;<h5>stmarksmb@saintmarksschool.com</h5></a>
+                <a class="instagram" href="https://www.instagram.com/stmarks_delhi/"><i class="fa fa-instagram"></i>&nbsp;&nbsp;<p>stmarks_delhi</p></a>
+            </section>
+        </div>
+    </body>
+</html>
